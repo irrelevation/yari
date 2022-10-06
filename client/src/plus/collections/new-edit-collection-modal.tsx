@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useGleanClick } from "../../../telemetry/glean-context";
-import { Button } from "../../../ui/atoms/button";
-import MDNModal from "../../../ui/atoms/modal";
-import NoteCard from "../../../ui/molecules/notecards";
-import { SubscriptionType, useUserData } from "../../../user-context";
-import { SubscribeLink } from "../../../ui/atoms/subscribe-link";
+import { useGleanClick } from "../../telemetry/glean-context";
+import { Button } from "../../ui/atoms/button";
+import MDNModal from "../../ui/atoms/modal";
+import { SubscribeLink } from "../../ui/atoms/subscribe-link";
+import NoteCard from "../../ui/molecules/notecards";
+import { SubscriptionType, useUserData } from "../../user-context";
 import {
   Collection,
   NewCollection,

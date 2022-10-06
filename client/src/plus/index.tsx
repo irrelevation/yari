@@ -12,7 +12,6 @@ import PlusDocs from "./plus-docs";
 
 const OfferOverview = React.lazy(() => import("./offer-overview"));
 const Collections = React.lazy(() => import("./collections"));
-const CollectionsV2 = React.lazy(() => import("./collections/v2"));
 
 export function Plus({ pageTitle, ...props }: { pageTitle?: string }) {
   React.useEffect(() => {
@@ -63,13 +62,7 @@ export function Plus({ pageTitle, ...props }: { pageTitle?: string }) {
         path="collections/*"
         element={
           <Layout>
-            {true ? (
-              <CollectionsV2 />
-            ) : (
-              <div className="bookmarks girdle">
-                <Collections />
-              </div>
-            )}
+            <Collections />
           </Layout>
         }
       />
